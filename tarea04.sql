@@ -30,8 +30,8 @@ CREATE OR REPLACE PROCEDURE obtener_num_parte_y_peso_gr IS
             P;
 BEGIN
     FOR parte_rec IN num_parte_y_peso_gr_cursor LOOP
-        DBMS_OUTPUT.PUT_LINE('Numero parte: ' || parte_rec.P# || ' - Peso (gr):
-                             ' || parte_rec.peso_gr);
+        DBMS_OUTPUT.PUT_LINE('Numero parte: ' || parte_rec.P# || ' - Peso (gr):' 
+                             || parte_rec.peso_gr);
     END LOOP;
 END obtener_num_parte_y_peso_gr;
 /
